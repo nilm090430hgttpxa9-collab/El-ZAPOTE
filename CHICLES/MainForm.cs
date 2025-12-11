@@ -124,9 +124,7 @@ namespace CHICLES
             txtCambio.Text = (pagado - totalNeto).ToString("0.00");
         }
 
-        // -----------------------------
-        // Cálculo final con validación
-        // -----------------------------
+      
         void CalcularNeto()
         {
               decimal sub = 0, desc = 0, pagado = 0, importe = 0, cambio = 0;

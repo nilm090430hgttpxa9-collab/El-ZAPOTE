@@ -203,6 +203,7 @@ namespace CHICLES
 			// 
 			// label4
 			// 
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.Location = new System.Drawing.Point(238, 453);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(100, 23);
@@ -218,6 +219,7 @@ namespace CHICLES
 			// 
 			// label5
 			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.Location = new System.Drawing.Point(238, 479);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(100, 23);
