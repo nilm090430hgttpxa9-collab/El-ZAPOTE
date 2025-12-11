@@ -36,6 +36,7 @@ namespace CHICLES
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProducto));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -63,6 +64,8 @@ namespace CHICLES
 			this.cbProductos = new System.Windows.Forms.ComboBox();
 			this.rbSalados = new System.Windows.Forms.RadioButton();
 			this.rbDulces = new System.Windows.Forms.RadioButton();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -273,7 +276,7 @@ namespace CHICLES
 			// 
 			// rbSalados
 			// 
-			this.rbSalados.Location = new System.Drawing.Point(488, 55);
+			this.rbSalados.Location = new System.Drawing.Point(-3, 135);
 			this.rbSalados.Name = "rbSalados";
 			this.rbSalados.Size = new System.Drawing.Size(104, 24);
 			this.rbSalados.TabIndex = 10;
@@ -283,7 +286,7 @@ namespace CHICLES
 			// 
 			// rbDulces
 			// 
-			this.rbDulces.Location = new System.Drawing.Point(469, 85);
+			this.rbDulces.Location = new System.Drawing.Point(71, 136);
 			this.rbDulces.Name = "rbDulces";
 			this.rbDulces.Size = new System.Drawing.Size(104, 24);
 			this.rbDulces.TabIndex = 9;
@@ -291,11 +294,23 @@ namespace CHICLES
 			this.rbDulces.Text = "dulces";
 			this.rbDulces.UseVisualStyleBackColor = true;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(-3, 7);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(648, 104);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 34;
+			this.pictureBox1.TabStop = false;
+			// 
 			// frmProducto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.ClientSize = new System.Drawing.Size(645, 523);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.rbDulces);
 			this.Controls.Add(this.cbProductos);
 			this.Controls.Add(this.rbSalados);
@@ -321,9 +336,11 @@ namespace CHICLES
 			this.Controls.Add(this.label1);
 			this.Name = "frmProducto";
 			this.Text = "CHICLES";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ComboBox cbProductos;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txtCambio;
