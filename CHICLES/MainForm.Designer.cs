@@ -36,6 +36,7 @@ namespace CHICLES
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProducto));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -63,6 +64,8 @@ namespace CHICLES
 			this.cbProductos = new System.Windows.Forms.ComboBox();
 			this.rbSalados = new System.Windows.Forms.RadioButton();
 			this.rbDulces = new System.Windows.Forms.RadioButton();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -75,6 +78,7 @@ namespace CHICLES
 			// 
 			// label2
 			// 
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(60, 197);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
@@ -105,6 +109,7 @@ namespace CHICLES
 			// 
 			// label9
 			// 
+			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.Location = new System.Drawing.Point(166, 195);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(100, 23);
@@ -113,6 +118,7 @@ namespace CHICLES
 			// 
 			// label10
 			// 
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label10.Location = new System.Drawing.Point(272, 195);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(100, 23);
@@ -121,7 +127,7 @@ namespace CHICLES
 			// 
 			// btnAgregar
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(426, 231);
+			this.btnAgregar.Location = new System.Drawing.Point(426, 223);
 			this.btnAgregar.Name = "btnAgregar";
 			this.btnAgregar.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregar.TabIndex = 19;
@@ -197,6 +203,7 @@ namespace CHICLES
 			// 
 			// label4
 			// 
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.Location = new System.Drawing.Point(238, 453);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(100, 23);
@@ -212,6 +219,7 @@ namespace CHICLES
 			// 
 			// label5
 			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.Location = new System.Drawing.Point(238, 479);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(100, 23);
@@ -265,7 +273,7 @@ namespace CHICLES
 									"Postre Salado 2",
 									"",
 									"Postre Salado 3"});
-			this.cbProductos.Location = new System.Drawing.Point(296, 136);
+			this.cbProductos.Location = new System.Drawing.Point(284, 137);
 			this.cbProductos.Name = "cbProductos";
 			this.cbProductos.Size = new System.Drawing.Size(121, 24);
 			this.cbProductos.TabIndex = 33;
@@ -273,7 +281,7 @@ namespace CHICLES
 			// 
 			// rbSalados
 			// 
-			this.rbSalados.Location = new System.Drawing.Point(488, 55);
+			this.rbSalados.Location = new System.Drawing.Point(-3, 135);
 			this.rbSalados.Name = "rbSalados";
 			this.rbSalados.Size = new System.Drawing.Size(104, 24);
 			this.rbSalados.TabIndex = 10;
@@ -283,7 +291,7 @@ namespace CHICLES
 			// 
 			// rbDulces
 			// 
-			this.rbDulces.Location = new System.Drawing.Point(469, 85);
+			this.rbDulces.Location = new System.Drawing.Point(71, 136);
 			this.rbDulces.Name = "rbDulces";
 			this.rbDulces.Size = new System.Drawing.Size(104, 24);
 			this.rbDulces.TabIndex = 9;
@@ -291,11 +299,23 @@ namespace CHICLES
 			this.rbDulces.Text = "dulces";
 			this.rbDulces.UseVisualStyleBackColor = true;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(-3, 7);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(648, 104);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 34;
+			this.pictureBox1.TabStop = false;
+			// 
 			// frmProducto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.ClientSize = new System.Drawing.Size(645, 523);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.rbDulces);
 			this.Controls.Add(this.cbProductos);
 			this.Controls.Add(this.rbSalados);
@@ -321,9 +341,11 @@ namespace CHICLES
 			this.Controls.Add(this.label1);
 			this.Name = "frmProducto";
 			this.Text = "CHICLES";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ComboBox cbProductos;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txtCambio;

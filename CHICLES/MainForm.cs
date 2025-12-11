@@ -40,9 +40,9 @@ namespace CHICLES
             }
         }
 
-        // -----------------------------
+        // ----------------------------
         // Asignar precio según producto
-        // -----------------------------
+        // ----------------------------
         void CbProductosSelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbProductos.Text.Contains("1")) txtPrecio.Text = "5";
@@ -124,9 +124,7 @@ namespace CHICLES
             txtCambio.Text = (pagado - totalNeto).ToString("0.00");
         }
 
-        // -----------------------------
-        // Cálculo final con validación
-        // -----------------------------
+      
         void CalcularNeto()
         {
               decimal sub = 0, desc = 0, pagado = 0, importe = 0, cambio = 0;
